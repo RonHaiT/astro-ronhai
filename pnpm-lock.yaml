@@ -26,6 +26,9 @@ importers:
       astro:
         specifier: ^5.8.1
         version: 5.8.1(@types/node@22.15.26)(jiti@2.4.2)(lightningcss@1.30.1)(rollup@4.41.1)(typescript@5.8.3)
+      daisyui:
+        specifier: ^5.0.42
+        version: 5.0.42
       svelte:
         specifier: ^5.33.10
         version: 5.33.10
@@ -865,6 +868,9 @@ packages:
     resolution: {integrity: sha512-/Tb/JcjK111nNScGob5MNtsntNM1aCNUDipB/TkwZFhyDrrE47SOx/18wF2bbjgc3ZzCSKW1T5nt5EbFoAz/Vg==}
     engines: {node: '>=4'}
     hasBin: true
+
+  daisyui@5.0.42:
+    resolution: {integrity: sha512-sZlqpPyu0wvjKtdryS62Njq18AJScr0V7Kruqc0ruSsl74SfGqaY8RMFkJoyNTorUx1OxWkAvkQP81uTyzNBqg==}
 
   debug@4.4.1:
     resolution: {integrity: sha512-KcKCqiftBJcZr++7ykoDIEwSa3XWowTfNPo92BYxjXiyYEVrUQh2aLyhxBCwww+heortUFxEJYcRzosstTEBYQ==}
@@ -2783,6 +2789,8 @@ snapshots:
       source-map-js: 1.2.1
 
   cssesc@3.0.0: {}
+
+  daisyui@5.0.42: {}
 
   debug@4.4.1:
     dependencies:
