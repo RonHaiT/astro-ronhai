@@ -32,7 +32,6 @@ let description = "隆海的站点";
   </body>
 </html>
 <script is:inline>
-  // ☝️ This script prevent the FART effect.
   if (localStorage.getItem("theme") === null) {
     document.documentElement.setAttribute("data-theme", "light");
   } else
@@ -40,11 +39,26 @@ let description = "隆海的站点";
       "data-theme",
       localStorage.getItem("theme")
     );
-  // "theme" LocalStorage value is set by the package to remember user preference.
-  // The value is checked and applyed before rendering anything.
+  function updateThemeIcon() {
+    const theme = localStorage.getItem("theme") || "light";
+    const isDark = theme === "dark";
+    document.getElementById("icon-sun").classList.toggle("hidden", !isDark);
+    document.getElementById("icon-moon").classList.toggle("hidden", isDark);
+  }
+
+  // 初次加载时设置图标
+  updateThemeIcon();
+
+  // 绑定点击事件
+  document.getElementById("theme-toggle").addEventListener("click", () => {
+    const currentTheme = localStorage.getItem("theme") || "light";
+    const newTheme = currentTheme === "dark" ? "light" : "dark";
+    localStorage.setItem("theme", newTheme);
+    document.documentElement.setAttribute("data-theme", newTheme);
+    updateThemeIcon();
+  });
 </script>
 <script>
   import { themeChange } from "theme-change";
   themeChange();
-  // 👆 you could import the CDN directly instead of these two lines
 </script>
