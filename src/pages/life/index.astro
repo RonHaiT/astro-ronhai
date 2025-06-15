@@ -1,0 +1,8 @@
+---
+import MainLayout from "../../layouts/MainLayout.astro";
+import { getCollection } from "astro:content";
+const allPosts = await getCollection("life");
+console.log(222222222, allPosts);
+---
+
+<MainLayout title="生活" />

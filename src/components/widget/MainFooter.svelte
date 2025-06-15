@@ -30,7 +30,7 @@
 </script>
 
 <footer class="w-full">
-  <div class="max-w-5xl w-full mx-auto flex justify-center items-center">
+  <div class="max-w-3xl w-full mx-auto flex justify-center items-center">
     <div
       class="transition flex items-center justify-center border-[oklch(85%_0.01_var(--hue))] border-dashed dark:border-white/15 flex-col mb-12 px-6 rounded-2xl"
     >

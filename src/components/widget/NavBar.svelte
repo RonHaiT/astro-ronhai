@@ -9,9 +9,9 @@
 </script>
 
 <nav
-  class="w-full px-4 py-3 flex justify-between items-center bg-base-100 shadow-md sticky top-0 z-50"
+  class="w-full px-4 py-5 flex justify-between items-center bg-base-100 sticky top-0 z-50"
 >
-  <div class="max-w-5xl w-full mx-auto flex justify-between items-center">
+  <div class="max-w-3xl w-full mx-auto flex justify-between items-center">
     <!-- Logo -->
     <div class="text-xl font-bold">
       <a href="/">🌿 隆海站点</a>
@@ -55,10 +55,30 @@
       }`}
     >
       <ul class="flex flex-col md:flex-row gap-4 md:gap-6 w-full md:w-auto">
-        <li><a class="link link-hover" href="/">首页</a></li>
-        <li><a class="link link-hover" href="/articles">文章</a></li>
-        <li><a class="link link-hover" href="/life">生活</a></li>
-        <li><a class="link link-hover" href="/about">关于</a></li>
+        <li>
+          <a
+            class="underline-offset-4 hover:underline hover:decoration-wavy hover:decoration-black-500"
+            href="/">首页</a
+          >
+        </li>
+        <li>
+          <a
+            class="underline-offset-4 hover:underline hover:decoration-wavy hover:decoration-black-500"
+            href="/articles">文章</a
+          >
+        </li>
+        <li>
+          <a
+            class="underline-offset-4 hover:underline hover:decoration-wavy hover:decoration-black-500"
+            href="/life">生活</a
+          >
+        </li>
+        <li>
+          <a
+            class="underline-offset-4 hover:underline hover:decoration-wavy hover:decoration-black-500"
+            href="/about">关于</a
+          >
+        </li>
       </ul>
       <!-- GitHub 和主题按钮 -->
       <div

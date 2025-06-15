@@ -1,8 +1,20 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-
+import { getCollection } from "astro:content";
+const posts = await getCollection("blog");
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
-<MainLayout title="Home" />
+<MainLayout title="Home">
+  <h1>My posts</h1>
+  <ul>
+    {
+      posts.map((post) => (
+        <li>
+          <a href={`/blog/${post.id}`}>{post.data.title}</a>
+        </li>
+      ))
+    }
+  </ul>
+</MainLayout>
