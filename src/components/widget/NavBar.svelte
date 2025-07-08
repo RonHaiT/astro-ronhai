@@ -64,7 +64,7 @@
         <li>
           <a
             class="underline-offset-4 hover:underline hover:decoration-wavy hover:decoration-black-500"
-            href="/articles">文章</a
+            href="/blog">文章</a
           >
         </li>
         <li>
